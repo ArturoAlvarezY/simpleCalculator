@@ -1,6 +1,3 @@
-# simpleCalculator
-My Simple Calculator!
-
 You are required to create a simple calculator that returns the result of addition, subtraction, multiplication or division of two numbers.
 
 Your function will accept three arguments:
