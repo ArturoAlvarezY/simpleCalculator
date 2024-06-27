@@ -19,4 +19,13 @@ number.forEach(button => {
     })
 });
 
-//
+//making my operators
+
+operator.forEach(op =>{
+    op.addEventListener("click", ()=>{
+       let showOperator= op.textContent;
+        return screen.innerHTML += showOperator;
+    })
+})
+
+//Making the rigth calcs
