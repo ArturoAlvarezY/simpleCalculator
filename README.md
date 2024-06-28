@@ -1,5 +1,6 @@
 This is my Calculator Exercise! 
 
-I set a model of calculator with html and css, but it is not functional, 
-
 You will find the functionalities of a simple calculator, where you can add, subtract, multiply and divide in the app.js <3 
+
+however, if you want to test my function, just make a fork and set your numbers and operators in letsOperate function!
+
