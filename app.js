@@ -1,31 +1,33 @@
-/*
-number
-operator
-#equal
-#screen
-*/
 
-const number= document.querySelectorAll('.number');
-const operator= document.querySelectorAll('.operator');
-const equal= document.getElementById('equal');
-const screen= document.getElementById('screen');
 
-//Making useful the number buttons  
+const letsOperate=(n1, n2, operator)=>{
 
-number.forEach(button => {
-    button.addEventListener("click", ()=>{
-        let makeNumber= Number(button.textContent);
-        return screen.innerHTML += makeNumber;
-    })
-});
+    let result='';
 
-//making my operators
+   if (isNaN(n1) || isNaN(n2)){
+    return 'is not a number'
+   }
+    
+   if (operator === !['+, -, /, *']) {
+    return 'You dont set any validate operator, i just accept +, -, /, *'
+   } 
+    
+   if(operator === '+'){
+    result= `${n1 + n2}`
+   }
+   else if(operator === '-'){
+    result= `${n1 - n2}`
+   }
+   else if(operator === '*'){
+    result= `${n1 * n2}`
+    }
+    else if(operator === '/'){
+    result= `${n1 / n2}`
+    }
 
-operator.forEach(op =>{
-    op.addEventListener("click", ()=>{
-       let showOperator= op.textContent;
-        return screen.innerHTML += showOperator;
-    })
-})
+    return result;
+}
 
-//Making the rigth calcs
+const makingMyCalc= letsOperate(4, 3, '*')
+
+console.log(makingMyCalc);
